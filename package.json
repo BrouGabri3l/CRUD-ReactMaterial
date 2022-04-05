@@ -2,7 +2,7 @@
   "name": "crud",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/BrouGabri3l/CRUD-ReactMaterial",
+  "homepage": "https://BrouGabri3l.github.io/CRUD-ReactMaterial",
   "dependencies": {
     "@date-io/date-fns": "1.x",
     "@emotion/react": "^11.8.2",
