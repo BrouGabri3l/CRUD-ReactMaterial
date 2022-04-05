@@ -2,6 +2,7 @@
   "name": "crud",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/BrouGabri3l/CRUD-ReactMaterial",
   "dependencies": {
     "@date-io/date-fns": "1.x",
     "@emotion/react": "^11.8.2",
@@ -17,6 +18,7 @@
     "axios": "^0.26.0",
     "date-fns": "^2.28.0",
     "formik": "^2.2.9",
+    "gh-pages": "^3.2.3",
     "http-proxy-middleware": "^2.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
