@@ -59,7 +59,7 @@ function App() {
       </Header>
       <Grid container sx={{ height: "100vh" }} justifyContent="center" alignItems="center" >
         < Routes >
-          <Route path="/home" element={<Home />}></Route>
+          <Route exact path="/" element={<Home />}></Route>
           <Route path="/edit/:id" element={<Edit />}></Route>
           <Route path="/novo" element={<NewUser />}></Route>
         </Routes>
