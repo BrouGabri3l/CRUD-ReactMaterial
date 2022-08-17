@@ -8,19 +8,12 @@ import Header from './components/header'
 import Home from './pages/home'
 import Edit from './pages/edit';
 import NewUser from './pages/novo'
-import { ThemeProvider, createTheme, ThemeOptions } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline, IconButton, Grid } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 
-const darkTheme = {
-  mode: "dark",
-};
-const lightTheme = {
-  palette: {
-    mode: 'light',
-  },
-}
+
 function App() {
   const [isDark, setDark] = useState(false)
   const baseTheme = {
@@ -29,7 +22,6 @@ function App() {
       primary: {
         main: '#5FDD9D',
       },
-
 
       secondary: {
         main: '#76F7BF',
@@ -43,7 +35,7 @@ function App() {
   useEffect(() => {
     const existsTheme = localStorage.getItem('themeMode')
     if (existsTheme != null) {
-      (existsTheme == 'true' ? setDark(true) : setDark(false))
+      (existsTheme === 'true' ? setDark(true) : setDark(false))
     } else {
       localStorage.setItem('themeMode', false)
       setDark(false)
